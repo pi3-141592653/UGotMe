@@ -43,6 +43,18 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+  <!-- a bit ugly -->
+  <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
+            gap: 10px; /* Space between images */
+        }
+        .grid-container img {
+            max-width: 100%; /* Ensures images are responsive */
+            height: auto;    /* Keeps aspect ratio */
+        }
+    </style>
 </head>
 <body>
 
@@ -69,11 +81,11 @@
                   </span>
                   
                   </div>
-
+                <!-- 
                   <div class="is-size-5 publication-authors">
                     <span class="author-block"><small><br><sup>*</sup>Project lead</small></span>,
                     <span class="author-block"><sup>1</sup>Macquarie University, <sup>2</sup>Sun Yat-sen University University</span>
-                  </div>
+                  </div> -->
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
@@ -182,6 +194,12 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<h1>Main Contributors</h1>
+  <div class="grid-container">
+      <img src="static/images/carousel2.jpg" alt="project lead">
+      <img src="static/images/carousel2.jpg" alt="advisor">
+</div>
 
 
 <!-- Image carousel -->
