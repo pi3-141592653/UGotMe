@@ -44,17 +44,19 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
   <!-- a bit ugly -->
-  <style>
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
-            gap: 10px; /* Space between images */
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images with Captions</title>
+    <style>
+        .image-container {
+            display: flex; /* Use flexbox for layout */
+            justify-content: center; /* Center images horizontally */
+            gap: 20px; /* Space between images */
         }
-       .grid-container figure {
-              text-align: center; /* Center the caption */
-          }
-        .grid-container img {
-             width: 200px; /* Set fixed width */
+        .image-container figure {
+            text-align: center; /* Center the caption */
+        }
+        .image-container img {
+            width: 200px; /* Set fixed width */
             height: 150px; /* Set fixed height */
             object-fit: cover; /* Maintain aspect ratio */
         }
@@ -172,20 +174,22 @@
   </div>
 </section>
 <!-- End teaser video -->
-
+  
+<section class="hero is-small">
 <h1 class="title is-3">Main Contributors</h1>
-  <div class="grid-container">
-    <figure>
+  <div class="image-container">
+        <figure>
             <img src="static/images/PeizhenLI.JPG" alt="project lead">
             <figcaption>project lead</figcaption>
-    </figure>
-    <figure>
-            <img src="static/images/lbcao.jpg" alt="advisor">
+        </figure>
+        <figure>
+             <img src="static/images/lbcao.jpg" alt="advisor">
             <figcaption>advisor</figcaption>
-    </figure>
-      
-     
-  </div>
+        </figure>
+    </div>
+</section>
+  
+ 
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
