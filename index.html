@@ -50,6 +50,9 @@
             grid-template-columns: repeat(2, 1fr); /* Two columns of equal width */
             gap: 10px; /* Space between images */
         }
+       .grid-container figure {
+              text-align: center; /* Center the caption */
+          }
         .grid-container img {
              width: 200px; /* Set fixed width */
             height: 150px; /* Set fixed height */
@@ -172,8 +175,16 @@
 
 <h1 class="title is-3">Main Contributors</h1>
   <div class="grid-container">
-      <img src="static/images/PeizhenLI.JPG" alt="project lead">
-      <img src="static/images/lbcao.jpg" alt="advisor">
+    <figure>
+            <img src="static/images/PeizhenLI.JPG" alt="project lead">
+            <figcaption>project lead</figcaption>
+    </figure>
+    <figure>
+            <img src="static/images/lbcao.jpg" alt="advisor">
+            <figcaption>advisor</figcaption>
+    </figure>
+      
+     
   </div>
 
 <!-- Paper abstract -->
