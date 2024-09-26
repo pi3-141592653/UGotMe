@@ -1,3 +1,3 @@
 # UGotMe: An Embodied System for Affective Human-Robot Interaction
 
-Coming soon!!!
+Project website is available at: pi3-141592653.github.io/UGotMe/
